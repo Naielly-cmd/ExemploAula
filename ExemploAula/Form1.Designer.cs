@@ -32,6 +32,7 @@
             lblusuario = new Label();
             txtusuario = new TextBox();
             lblsenha = new Label();
+            txtsenha = new TextBox();
             SuspendLayout();
             // 
             // lbllogin
@@ -62,17 +63,25 @@
             // lblsenha
             // 
             lblsenha.AutoSize = true;
-            lblsenha.Location = new Point(212, 135);
+            lblsenha.Location = new Point(209, 135);
             lblsenha.Name = "lblsenha";
             lblsenha.Size = new Size(39, 15);
             lblsenha.TabIndex = 3;
             lblsenha.Text = "Senha";
+            // 
+            // txtsenha
+            // 
+            txtsenha.Location = new Point(368, 132);
+            txtsenha.Name = "txtsenha";
+            txtsenha.Size = new Size(100, 23);
+            txtsenha.TabIndex = 4;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtsenha);
             Controls.Add(lblsenha);
             Controls.Add(txtusuario);
             Controls.Add(lblusuario);
@@ -89,5 +98,6 @@
         private Label lblusuario;
         private TextBox txtusuario;
         private Label lblsenha;
+        private TextBox txtsenha;
     }
 }
